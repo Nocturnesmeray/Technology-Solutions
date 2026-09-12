@@ -8,39 +8,71 @@
   <meta name="description" content="This website will serve as my digital portfolio to show prospective employers and clients who I am and what I can do.">
   <meta name="keywords" content="Python, Java, website development, debugging, artificial intelligence, databases">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+/* Tag Selectors */
+body {background-image:url('images/background.jpg'); background-color:lightblue; background-size:cover; background-attachment:fixed; max-width: 1000px; margin:auto;}
+h1 {color:purple; text-align:center}
+h2 {color:purple; text-align:center}
+img {max-width:150px; display:block; margin:auto;}
+header {background-image:url('images/banner.jpg'); background-repeat:no-repeat; background-size:cover; background-position:center center; position:relative; padding-top:25%;}
+nav {text-align:center; font-size:18px;}
+main {padding: 10px; background-color:#F8F8FF;}
+footer {text-align:left;}
+hr {width:60%; border:5px solid #039; border-radius:6px}
+p {color:navy}
+svg {display: block; margin: auto;}
+
+/* Class Selectors */
+.contact {color:purple;}
+.important {font-weight:bold; color:#2B0A69; text-align:center}
+.intro {font-size:20px; color:navy}
+.ending {font-weight:bold; color:navy}
+
+/* ID Selectors */
+#wrapper {background-color: #F8F8FF; border: 2px #009 solid}
+#mail-icon {max-width:50px; border:0px; display:block; margin:auto;}
+#welcome-banner { background-color:#F8F8FF; border-bottom: 4px solid #2B0A69; padding: 10px; margin-bottom: 20px; }
+</style>
 </head>
 
-<body style="background-image:url('images/background.jpg'); background-color:lightblue; background-size:cover; background-attachment:fixed; max-width: 1000px; margin:auto;">
-<header style="background-image:url('images/banner.jpg'); background-repeat:no-repeat; background-size:cover; background-position:center center; position:relative; padding-top:25%;"></header>
+
+<body>
+<div id="wrapper">
+<header></header>
 
 
-<nav style="text-align:center; font-size:18px;">
+<nav>
   <a href="index.htm">Home</a>|
   <a href="#Education">Education and Skills</a>|
   <a href="#Goals">Professional Goals</a>|
   <a href="resume.htm">My Resume</a>|
-
 </nav>
 
+
 <main>
-  <h1 style="font-weight:bold; color:#2B0A69; text-align:center">Veronica Van Cleave - Technology Solutions</h1>
-  <h1 style="color:purple; text-align:center">About Me</h1> <img src="images/headshot.jpg" style="max-width:150px; display:block; margin:auto;" alt="Headshot">
-  <p style="font-size:20px; color:navy">My name is <em>Veronica Van Cleave</em>. I love activities that allow me to explore my creativity such as making ceramics and glassblowing. Working raw materials into something original requires a lot of patience and problem-solving skills, but the rewards are definitely worth it. Programming appeals to me for a lot of the same reasons. When something unexpected happens while building a website or writing code, I try every possible angle to overcome the challenge. </p><br>
 
-<hr style="width:60%; border:5px solid #039; border-radius:6px">
-  <h2 id="Education" style="color:purple; text-align:center"> Education and Skills</h2> <img src="images/scf-logo.jpg" onmouseover="this.src='images/scf-logo2.jpg'" onmouseout="this.src='images/scf-logo.jpg'" style="max-width:150px; display:block; margin:auto;" alt="SCF Logo">
-  <p style="color:navy">I'm currently on track to earn multiple associate degrees from the <a href="https://www.scf.edu/" target="_blank"><strong>State College of Florida</strong></a>. In addition to a traditional Associate in Arts degree, I'm also pursuing an Associate in Science in Computer Information Technology and Associate in Science in Software Development. I'm working on these simultaneously because the more classes I take, the more I've come to realize how the different subjects all connect. This unified approach to learning requires organization and adaptability, but I'm up to the task. </p>
+<div id="welcome-banner">
+  <h1 class="important">Veronica Van Cleave - Technology Solutions</h1>
+</div> <!-- close welcome-banner -->
+  <h1>About Me</h1> <img src="images/headshot.jpg" alt="Headshot">
+  <p class="intro">My name is <em>Veronica Van Cleave</em>. I love activities that allow me to explore my creativity such as making ceramics and glassblowing. Working raw materials into something original requires a lot of patience and problem-solving skills, but the rewards are definitely worth it. Programming appeals to me for a lot of the same reasons. When something unexpected happens while building a website or writing code, I try every possible angle to overcome the challenge. </p><br>
 
-
-  <p style="color:navy">So far, my favorite classes have all involved coding. Having multiple approaches or solutions to a coding problem is a challenge I enjoy. Along the way, I've gained experience with Python and Java, website development, debugging, artificial intelligence, and databases. Future coursework will expand my knowledge of business and networking.</p><br>
-<hr style="width:60%; border:5px solid #039; border-radius:6px">
-
-
-  <h2 id="Goals" style="color:purple; text-align:center">Professional Goals</h2>
-  <p style="font-weight:bold; color:navy">After completing my A.A. and A.S. degrees at the State College of Florida, I intend to transfer to a state university in Florida to earn a bachelor's degree. Technology is constantly changing, and I look forward to the challenge of learning and evolving along with it. My goal is to build a career that combines creativity, technology, and problem-solving. </p>
+<hr>
+  <h2 id="Education"> Education and Skills</h2> <img src="images/scf-logo.jpg" onmouseover="this.src='images/scf-logo2.jpg'" onmouseout="this.src='images/scf-logo.jpg'" alt="SCF Logo">
+  <p>I'm currently on track to earn multiple associate degrees from the <a href="https://www.scf.edu/" target="_blank"><strong>State College of Florida</strong></a>. In addition to a traditional Associate in Arts degree, I'm also pursuing an Associate in Science in Computer Information Technology and Associate in Science in Software Development. I'm working on these simultaneously because the more classes I take, the more I've come to realize how the different subjects all connect. This unified approach to learning requires organization and adaptability, but I'm up to the task. </p>
 
 
-<svg height="130" width="200" style="display: block; margin: auto;">
+  <p>So far, my favorite classes have all involved coding. Having multiple approaches or solutions to a coding problem is a challenge I enjoy. Along the way, I've gained experience with Python and Java, website development, debugging, artificial intelligence, and databases. Future coursework will expand my knowledge of business and networking.</p><br>
+<hr>
+
+
+  <h2 id="Goals">Professional Goals</h2>
+  <p class="ending">After completing my A.A. and A.S. degrees at the State College of Florida, I intend to transfer to a state university in Florida to earn a bachelor's degree. Technology is constantly changing, and I look forward to the challenge of learning and evolving along with it. My goal is to build a career that combines creativity, technology, and problem-solving. </p>
+
+
+<svg height="130" width="200">
   <defs>
     <linearGradient id="grad1">
       <stop offset="0%" stop-color="#1A3EB8" />
@@ -50,20 +82,22 @@
   <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
   <text fill="#ffffff" font-size="15" font-family="Verdana" x="25" y="75">Creative Technology</text>
 </svg> <br>
+<hr>
 
-<hr style="width:60%; border:5px solid #039; border-radius:6px">
+
+
   <a href="mailto:vvancle1@student.scf.edu">
-    <img src="images/mail.jpg" alt="Email Me" style="max-width:50px; border:0px; display:block; margin:auto;">
+    <img id="mail-icon" src="images/mail.jpg" alt="Email Me" >
   </a><br>
 
 </main>
 
 <footer>
-  <span style="color:purple;">Contact Me:</span>
+  <span class="contact">Contact Me:</span>
   <a href="mailto:vvancle1@student.scf.edu">vvancle1@student.scf.edu</a>
   |  <a href="tel:19415555555">(941) 555-5555</a>
 </footer>
-
+</div><!-- close wrapper -->
 
 
 </body>
