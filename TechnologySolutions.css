@@ -52,3 +52,17 @@ svg {display: block; margin: auto;}
 #wrapper {background-color: #F8F8FF; border: 2px #009 solid}
 #mail-icon {max-width:50px; border:0px; display:block; margin:auto;}
 #welcome-banner { background-color:#F8F8FF; border-bottom: 4px solid #2B0A69; padding: 10px; margin-bottom: 20px; }
+
+/* Mobile Responsive Layout */
+/* Fixes the way the screen appears on a phone */
+@media screen and (max-width: 800px) {
+    aside {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    section {
+        width: 100%;
+        float: none;
+    }
+}
