@@ -32,7 +32,7 @@ nav .selected {
 aside   {width:25%; float:left;
         text-align:right; padding:14px;
         box-sizing:border-box;}
-section {width:75%; padding:14px;
+section {width:75%; float:left; padding:14px;
         box-sizing:border-box;}
 address {text-align:center}
 main {padding: 10px; background-color:#F8F8FF;}
