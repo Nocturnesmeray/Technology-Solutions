@@ -1,0 +1,54 @@
+* {box-sizing:border-box;}
+
+/* Tag Selectors */
+body {background-image:url('images/background.jpg'); background-color:lightblue; background-size:cover; background-attachment:fixed; width: 1000px; margin:auto;}
+h1 {color:purple; text-align:center}
+h2 {color:purple; text-align:center}
+img {max-width:100%; height:auto; display: block; margin: auto;}
+header {background-image:url('images/banner.jpg'); background-repeat:no-repeat; background-size:cover; background-position:center center; position:relative; padding-top:25%;}
+nav {text-align:center; font-size:18px;}
+
+nav ul {
+    padding: 0;
+    list-style: none; /* Removes bullets */
+}
+nav li {
+    display: inline; /* Makes it horizontal */
+    padding: 0px 14px;
+}
+nav a {
+    color: navy; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+nav a:hover {
+    color: white; 
+    background-color: purple; /* Added your theme color */
+}
+nav .selected {
+    color: white; 
+    background-color: navy; /* Shows user which page they are currently on */
+}
+aside   {width:25%; float:left;
+        text-align:right; padding:14px;
+        box-sizing:border-box;}
+section {width:75%; padding:14px;
+        box-sizing:border-box;}
+address {text-align:center}
+main {padding: 10px; background-color:#F8F8FF;}
+footer {text-align:left;}
+hr {width:60%; border:5px solid #039; border-radius:6px}
+p {color:navy}
+svg {display: block; margin: auto;}
+
+/* Class Selectors */
+.contact {color:purple;}
+.important {font-weight:bold; color:#2B0A69; text-align:center}
+.intro {font-size:20px; color:navy}
+.ending {font-weight:bold; color:navy}
+.small-img {max-width: 150px;}
+
+/* ID Selectors */
+#wrapper {background-color: #F8F8FF; border: 2px #009 solid}
+#mail-icon {max-width:50px; border:0px; display:block; margin:auto;}
+#welcome-banner { background-color:#F8F8FF; border-bottom: 4px solid #2B0A69; padding: 10px; margin-bottom: 20px; }
