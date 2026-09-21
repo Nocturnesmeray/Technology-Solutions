@@ -1,7 +1,7 @@
 * {box-sizing:border-box;}
 
 /* Tag Selectors */
-body {background-image:url('images/background.jpg'); background-color:lightblue; background-size:cover; background-attachment:fixed; width: 1000px; margin:auto;}
+body {background-image:url('images/background.jpg'); background-color:lightblue; background-size:cover; background-attachment:fixed; max-width: 1000px; margin:auto;}
 h1 {color:purple; text-align:center}
 h2 {color:purple; text-align:center}
 img {max-width:100%; height:auto; display: block; margin: auto;}
