@@ -14,10 +14,11 @@ nav ul {
     list-style: none; /* Removes bullets */
 }
 nav li {
-    display: inline; /* Makes it horizontal */
+    display: block; /* Makes it horizontal */
     padding: 0px 14px;
 }
 nav a {
+    display: block;
     color: navy; 
     text-decoration: none; 
     font-weight: bold;
@@ -30,6 +31,7 @@ nav .selected {
     color: white; 
     background-color: navy; /* Shows user which page they are currently on */
 }
+
 aside   {width:25%; float:left;
         text-align:right; padding:14px;
         box-sizing:border-box;}
@@ -41,6 +43,7 @@ footer {text-align:left;}
 hr {width:60%; border:5px solid #039; border-radius:6px}
 p {color:navy; font-size: 14px}
 svg {display: block; margin: auto;}
+
 
 /* Class Selectors */
 .contact {color:purple;}
@@ -54,3 +57,9 @@ svg {display: block; margin: auto;}
 #mail-icon {max-width:50px; border:0px; display:block; margin:auto;}
 #welcome-banner { background-color:#F8F8FF; border-bottom: 4px solid #2B0A69; padding: 10px; margin-bottom: 20px; }
 
+
+@media only screen and (min-width:640px){
+nav a {display:inline}
+/* display:inline = left to right */
+nav li {display:inline; padding:0 18px}
+}
