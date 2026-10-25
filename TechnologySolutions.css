@@ -2,10 +2,6 @@
 
 /* Tag Selectors */
 body {background-image:url('images/background.jpg'); background-color:lightblue; background-size:cover; background-attachment:fixed; max-width: 1000px; margin:auto;}
-h1 {color:#660066; text-align:center}
-h2 {color:purple; text-align:center}
-h3 {color:#990099; text-align:center}
-img {max-width:100%; height:auto; display: block; margin: auto;}
 header {background-image:url('images/banner.jpg'); background-repeat:no-repeat; background-size:cover; background-position:center center; position:relative; padding-top:25%;}
 nav {text-align:center; font-size:18px;}
 
@@ -32,36 +28,53 @@ nav .selected {
     background-color: navy; /* Shows user which page they are currently on */
 }
 
-blockquote {text-align:justify; color:navy;}
-blockquote:first-letter {font-size:1.8em; font-weight:bold}
-
-
+main {padding: 10px; background-color:#F8F8FF;}
+h1 {color:#660066; text-align:center}
+img {max-width:100%; height:auto; display: block; margin: auto;}
+p {color:navy; font-size: 14px}
+hr {width:60%; border:5px solid #039; border-radius:6px}
+h2 {color:purple; text-align:center}
+svg {display: block; margin: auto;}
+footer {text-align:left;}
+address {text-align:center}
 aside   {width:25%; float:left;
         text-align:right; padding:14px;
         box-sizing:border-box;}
+h3 {color:#990099; text-align:center}
 section {width:75%; float:left; padding:14px;
         box-sizing:border-box;}
-address {text-align:center}
-main {padding: 10px; background-color:#F8F8FF;}
-footer {text-align:left;}
-hr {width:60%; border:5px solid #039; border-radius:6px}
-p {color:navy; font-size: 14px}
-svg {display: block; margin: auto;}
-
 figure {display: inline-block; width: 320px; margin: 15px; text-align: center;}
+blockquote {text-align:justify; color:navy;}
+blockquote:first-letter {font-size:1.8em; font-weight:bold}
+table {border:4px solid #003399; border-collapse:collapse; margin: 0 auto;}
+tr {border-bottom: 1px solid #cccccc;}
+th {background-color: #003399;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    font-size: 1.2em;}
+td {padding: 10px;
+    vertical-align: middle;}
+
+
+
+/* ID Selectors */
+#wrapper {background-color: #F8F8FF; border: 2px #009 solid}
+#welcome-banner { background-color:#F8F8FF; border-bottom: 4px solid #2B0A69; padding: 10px; margin-bottom: 20px; }
+#mail-icon {max-width:50px; border:0px; display:block; margin:auto;}
+#figurecontainer {text-align: center;}
+
 
 /* Class Selectors */
-.contact {color:purple;}
 .important {font-weight:bold; color:#2B0A69; text-align:center}
+.small-img {max-width: 150px;}
 .intro {font-size:20px; color:navy}
 .ending {font-weight:bold; color:navy}
-.small-img {max-width: 150px;}
-.box {border:2px blue solid}
+.contact {color:purple;}
 .styled {width:80%; border:4px solid #039; border-radius:6px}
-
 .infoBar {color:#FFFFFF; background-color:#000000;
 	margin-left:6px; font-size:x-large; width: fit-content; margin: 0 auto; display: block;}
-
+.box {border:2px blue solid}
 
 .toggle-checkbox {
   display: none; 
@@ -91,11 +104,14 @@ figure {display: inline-block; width: 320px; margin: 15px; text-align: center;}
   }
 }
 
-/* ID Selectors */
-#wrapper {background-color: #F8F8FF; border: 2px #009 solid}
-#mail-icon {max-width:50px; border:0px; display:block; margin:auto;}
-#welcome-banner { background-color:#F8F8FF; border-bottom: 4px solid #2B0A69; padding: 10px; margin-bottom: 20px; }
-#figurecontainer {text-align: center;}
+.align-right {
+    text-align: right;
+    font-weight: bold;
+    width: 150px; }
+
+.required { color: red; font-weight: bold; }
+
+
 
 
 

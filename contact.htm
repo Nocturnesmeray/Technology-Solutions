@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Veronica Van Cleave">
+  <meta name="description" content="This webpage will allow me to gather information about potential clients and for them to contact me when they complete the form.">
+  <meta name="keywords" content="name, contact, email">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="TechnologySolutions.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+
+<body>
+<div id="wrapper">
+<header></header>
+
+
+<nav>
+  <ul>
+   <li><a href="index.htm">Home</a></li>
+   <li><a href="resume.htm">Resume</a></li>
+   <li><a href="portfolio.htm">Portfolio</a></li>
+   <li><a href="newsletter.htm">Newsletter</a></li>
+   <li><a href="transcript.htm">Transcript</a></li>
+   <li><a href="contact.htm"><span class="selected">Contact</span></a></li>
+  </ul>
+</nav>
+
+
+<main>
+
+
+<form action="#" method="post">
+
+<table>
+ <tr>
+   <th colspan="2">Contact Veronica</th> <!-- th = Table Header -->
+ </tr>
+
+ <tr>
+   <td class="align-right"> <!-- td = Table Data (column) -->
+   First Name <span class="required">*</span>
+   </td>
+   <td style="width:350px"> <input type="text" name="firstname" required>
+   </td>
+ </tr>
+
+ <tr>
+   <td class="align-right">
+   Last Name <span class="required">*</span>
+   </td>
+   <td> <input type="text" name="lastname" required>
+   </td>
+ </tr>
+
+ <tr>
+   <td class="align-right">Address</td>
+   <td><input type="text" name="address">
+</td>
+</tr>
+
+ <tr>
+   <td class="align-right">City</td>
+   <td><input type="text" name="city"></td>
+ </tr>
+
+ <tr>
+   <td class="align-right">ST</td>
+   <td><select name="state">
+                                <option value="FL" Selected>Florida</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+       </select></td>
+ </tr>
+
+ <tr>
+   <td class="align-right">
+   ZIP
+   </td>
+   <td> <input type="text" name="zip">
+   </td>
+ </tr> 
+
+ <tr>
+   <td class="align-right">Email <span class="required">*</span></td>
+   <td><input type="email" name="email" required></td>
+ </tr>
+
+ <tr>
+   <td class="align-right">Phone Number</td>
+   <td><input type="text" name="phonenumber"></td>
+ </tr>
+
+ <tr>
+   <td class="align-right">Comments</td>
+   <td><textarea cols="20" name="Comments" rows="2"></textarea></td>
+ </tr>
+
+ <tr>
+   <td class="align-right"><input name="Reset" type="reset" value="Reset"></td>
+   <td><input name="Submit" type="submit" value="Submit"></td>
+ </tr>
+</table>
+
+</form>
+
+</main>
+
+<footer>
+  <span class="contact">Contact Me:</span>
+  <a href="mailto:vvancle1@student.scf.edu">vvancle1@student.scf.edu</a>
+  |  <a href="tel:19415555555">(941) 555-5555</a>
+</footer>
+</div><!-- close wrapper -->
+
+
+</body>
+</html>
