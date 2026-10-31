@@ -34,7 +34,8 @@
 <main>
 
 
-<form action="#" method="post">
+<form name="contactForm" id="contactForm" action="FormProcess.php" method="post">
+<input type="hidden" name="redirect" value="contactSent.htm">
 
 <table>
  <tr>
@@ -98,8 +99,27 @@
  </tr>
 
  <tr>
-   <td class="align-right">Comments</td>
-   <td><textarea cols="20" name="Comments" rows="2"></textarea></td>
+   <td class="align-right">Interest</td>
+   <td><input type="checkbox" name="python" value="python">Python
+<input type="checkbox" name="java" value="java">Java
+<input type="checkbox" name="websitecreation" value="websitecreation">Website Creation
+<input type="checkbox" name="AI" value="AI">AI
+</td>
+</tr>
+
+<tr>
+   <td class="align-right">Best Time For Contact</td>
+   <td><input type="radio" name="contact" id="AM" value="AM">AM
+<input type="radio" name="contact" id="PM" value="PM">PM
+</td>
+ </tr>
+
+
+
+ <tr>
+   <td class="align-right">Comments<span class="required">*</span>
+</td>
+   <td><textarea cols="20" name="Comments" rows="2" required></textarea></td>
  </tr>
 
  <tr>
