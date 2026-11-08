@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JavaScript</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Veronica Van Cleave">
+  <meta name="description" content="This webpage displays eight different examples of JavaScript features.">
+  <meta name="keywords" content="JavaScript, website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="TechnologySolutions.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+
+<body>
+<div id="wrapper">
+<header></header>
+
+
+<nav>
+  <ul>
+   <li><a href="index.htm">Home</a></li>
+   <li><a href="resume.htm">Resume</a></li>
+   <li><a href="portfolio.htm">Portfolio</a></li>
+   <li><a href="newsletter.htm">Newsletter</a></li>
+   <li><a href="transcript.htm">Transcript</a></li>
+   <li><a href="transcript.htm">Contact</a></li>
+   <li><a href="js.htm"><span class="selected">JavaScript</span></a></li>
+  </ul>
+</nav>
+
+
+<main>
+<h1>Website Creation</h1>
+<p>This webpage displays examples of JavaScript features that you can interact with. You will learn about these and more in my website creation workshop.</p>
+
+
+<table>
+ <tr>
+   <th colspan="2">JavaScript Examples</th> <!-- th = Table Header -->
+ </tr>
+
+ <tr>
+   <td class="align-right"> <!-- td = Table Data (column) -->
+   #1 Mouseover Hover Event
+   </td>
+   <td style="width:350px"> <span onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='black'">
+  You can have the color of your text change while users hover over it.
+</span>
+   </td>
+ </tr>
+
+ <tr>
+   <td class="align-right">
+   #2 Double Click Event
+   </td>
+   <td> <div onDblClick="alert('This is a good place to give users more information.')">
+  You can require the user to click twice to trigger a double click event. </div>
+   </td>
+ </tr>
+
+ <tr>
+   <td class="align-right">
+   #3 Prompt Statement
+   </td>
+   <td>
+   <p>You can ask users questions and display their answers.</p>
+  <script> answer = prompt("What do you want to learn about technology?", "");
+document.write(answer + " is a good thing to learn about.") 
+</script> 
+   </td>
+ </tr>
+
+ <tr>
+   <td class="align-right">
+   #4 Inline SetTimeout Delay
+   </td>
+   <td> <p>You can require the user to click in a designated <a href="javascript: setTimeout(function(){ alert('You can set the time delay of your message.'); }, 2000);"> spot.</a></p>
+   </td>
+ </tr>
+
+ <tr>
+   <td class="align-right">
+   #5 Inline Class List Toggling
+   </td> 
+   <td>
+<button onClick="this.classList.toggle('active-state')">
+  You can highlight buttons when users click on them.
+</button>
+   </td>
+ </tr>
+
+ <tr>
+   <td class="align-right">
+   #6 Internal JavaScript Routine
+   </td>
+   <td> <!-- This is from Snipzy BTN001. When you hover over the button the button and text change. -->
+<button class="glowing-button" 
+   onmouseover="this.innerHTML='New text appears here.'"
+   onmouseout="this.innerHTML='Moving off the button reveals this text.'">Hovering over buttons can change the button.</button>
+   </td>
+ </tr>
+
+ <tr>
+   <td class="align-right">
+   #7 External JavaScript Routine
+   </td>
+   <td> <!-- This is from https://www.geeksforgeeks.org/html/html-dom-video-pause-method/. I modified the code to lead to my mp3 file when the user clicks on the word here. -->
+
+<audio id="Test_Audio" src="music.mp3" controls style="display: none;">
+</audio>
+
+
+<p>If you click <a href="#" onclick="showAudio(event)">here</a> then you can listen to a song.</p>
+
+
+<script src="external.js"></script>
+
+   </td>
+ </tr>
+
+ <tr>
+   <td class="align-right">
+   #8 Inline Onselect Event
+   </td>
+   <td> 
+
+<div id="popupOverlay"></div>
+<div id="customPopup">
+    <h2>Event Triggered!</h2>
+    <p>The default right click can be replaced by your own unique message.</p>
+    <button onclick="document.getElementById('customPopup').style.display='none'; document.getElementById('popupOverlay').style.display='none';">Close</button>
+</div>
+
+<script>
+
+document.addEventListener("contextmenu", function(event) {
+    event.preventDefault(); // Blocks the default browser right-click menu
+    document.getElementById("customPopup").style.display = "block";
+    document.getElementById("popupOverlay").style.display = "block";
+});
+</script>
+<p>You can block the right click default and replace it.</p>
+   </td>
+ </tr>
+
+</table>
+
+</main>
+
+<footer>
+  <span class="contact">Contact Me:</span>
+  <a href="mailto:vvancle1@student.scf.edu">vvancle1@student.scf.edu</a>
+  |  <a href="tel:19415555555">(941) 555-5555</a>
+</footer>
+</div><!-- close wrapper -->
+
+
+</body>
+</html>
